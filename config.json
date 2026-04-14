@@ -26,6 +26,46 @@
       "category": "Company Announcements"
     },
     {
+      "name": "arXiv AI (cs.AI)",
+      "url": "http://export.arxiv.org/rss/cs.AI",
+      "category": "Academic Research"
+    },
+    {
+      "name": "arXiv Machine Learning",
+      "url": "http://export.arxiv.org/rss/cs.LG",
+      "category": "Academic Research"
+    },
+    {
+      "name": "arXiv Computation & Language",
+      "url": "http://export.arxiv.org/rss/cs.CL",
+      "category": "Academic Research"
+    },
+    {
+      "name": "Berkeley AI Research (BAIR)",
+      "url": "https://bair.berkeley.edu/blog/feed.xml",
+      "category": "Academic Research"
+    },
+    {
+      "name": "Stanford AI Lab",
+      "url": "https://ai.stanford.edu/blog/feed/",
+      "category": "Academic Research"
+    },
+    {
+      "name": "CMU AI Blog",
+      "url": "https://blog.ml.cmu.edu/feed/",
+      "category": "Academic Research"
+    },
+    {
+      "name": "MIT CSAIL",
+      "url": "https://www.csail.mit.edu/rss.xml",
+      "category": "Academic Research"
+    },
+    {
+      "name": "DeepMind Research",
+      "url": "https://www.deepmind.com/blog/rss.xml",
+      "category": "Academic Research"
+    },
+    {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog/feed.xml",
       "category": "Research & Development"
@@ -33,11 +73,6 @@
     {
       "name": "AI at Google",
       "url": "https://blog.google/technology/ai/rss/",
-      "category": "Research & Development"
-    },
-    {
-      "name": "MIT CSAIL",
-      "url": "https://www.csail.mit.edu/rss.xml",
       "category": "Research & Development"
     },
     {
@@ -81,6 +116,26 @@
       "category": "Enterprise AI"
     },
     {
+      "name": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+      "category": "Enterprise AI"
+    },
+    {
+      "name": "Wall Street Journal AI",
+      "url": "https://feeds.a.dj.com/rss/RSSWSJD.xml",
+      "category": "Enterprise AI"
+    },
+    {
+      "name": "Computerworld AI",
+      "url": "https://www.computerworld.com/artificial-intelligence/index.rss",
+      "category": "Enterprise AI"
+    },
+    {
+      "name": "SiliconANGLE AI",
+      "url": "https://siliconangle.com/category/ai/feed/",
+      "category": "Enterprise AI"
+    },
+    {
       "name": "Future of Life Institute",
       "url": "https://futureoflife.org/feed/",
       "category": "AI Governance & Policy"
@@ -116,6 +171,6 @@
       "category": "Industry News"
     }
   ],
-  "max_articles_per_feed": 2,
+  "max_articles_per_feed": 3,
   "days_to_show": 7
 }

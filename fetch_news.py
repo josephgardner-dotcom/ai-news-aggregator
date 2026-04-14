@@ -269,7 +269,8 @@ def generate_html(articles, config):
         'AI Agents & Automation',
         'Research & Development',
         'AI Governance & Policy',
-        'Industry News'
+        'Industry News',
+        'Academic Research'
     ]
     for category in category_order:
         if category in grouped_articles:
