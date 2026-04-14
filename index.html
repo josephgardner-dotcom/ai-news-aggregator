@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Aggregator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .last-updated {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .category-section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .category-header {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .article {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 4px solid #667eea;
+        }
+
+        .article:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .article-title {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .article-title a:hover {
+            color: #667eea;
+        }
+
+        .article-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .article-source {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .article-date {
+            color: #999;
+        }
+
+        .article-summary {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .category-header {
+                font-size: 1.4em;
+            }
+
+            .article-title {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI News Aggregator</h1>
+            <div class="subtitle">Daily curated AI news from top sources</div>
+            <div class="last-updated">Last updated: April 14, 2026 at 09:07 UTC</div>
+        </header>
+
+        <div class="category-section">
+            <h2 class="category-header">Company Announcements</h2>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://openai.com/index/cloudflare-openai-agent-cloud" target="_blank">Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">OpenAI Blog</span>
+                    <span class="article-date"> • 2026-04-13</span>
+                </div>
+
+                <div class="article-summary">Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises to build, deploy, and scale AI agents for real-world tasks with speed and security.</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://openai.com/academy/operations" target="_blank">ChatGPT for operations teams</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">OpenAI Blog</span>
+                    <span class="article-date"> • 2026-04-10</span>
+                </div>
+
+                <div class="article-summary">Learn how operations teams use ChatGPT to streamline workflows, improve coordination, standardize processes, and drive faster execution.</div>
+
+            </div>
+
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-header">Enterprise AI</h2>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.zdnet.com/article/jbl-780-nc-review/" target="_blank">After using these JBL headphones, I'm wondering if we're all too distracted by Sony and Bose</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">ZDNet AI</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary">The JBL Live 780NC are a home run for midrange headphones, offering premium features in a sub-$300 package.</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.zdnet.com/article/uag-metropolis-wallet-tracker-ios-android-review/" target="_blank">I carried this Bluetooth tracker card in my backpack for a week - and it withstood my clumsiness</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">ZDNet AI</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary">The UAG Metropolis tracker is an AirTag wallet alternative that's highly functional, and all my bending and flexing haven't fazed it.</div>
+
+            </div>
+
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-header">AI Agents & Automation</h2>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://blog.crewai.com/global-cpg-automates-supply-chain-demand-forecasting-agentic-ai/" target="_blank">How a Global CPG Automates Supply Chain Demand Forecasting with Agentic AI</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">CrewAI Updates</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary">Discover how CPG supply chains use agentic AI to automate demand forecasting, boosting accuracy and speed while cutting manual effort.</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot" target="_blank">Anthropic repeatedly accidentally trained against the CoT, demonstrating inadequate processes</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">AI Alignment Forum</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary"><p><span>It turns out that Anthropic accidentally trained against the chain of thought of Claude Mythos Preview in around 8% of training episodes. This is at least the second independent incident in which Anthropic accidentally exposed their model's CoT to the oversight signal. </span></p><p><span>I...</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.alignmentforum.org/posts/ASoFTyk3bzBE62dyn/my-unsupervised-elicitation-challenge" target="_blank">My unsupervised elicitation challenge</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">AI Alignment Forum</span>
+                    <span class="article-date"> • 2026-04-08</span>
+                </div>
+
+                <div class="article-summary"><p><em>Note: you are ineligible to complete this challenge if you’ve studied Ancient or Modern Greek, or if you natively speak Modern Greek, or if for other reasons you know what mistakes I’m claiming Opus 4.6 makes. If you’re ineligible, please don’t help other people complete the challenge.</em></...</div>
+
+            </div>
+
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-header">Research & Development</h2>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://pub.towardsai.net/top-20-time-series-forecasting-interview-questions-and-answers-part-1-of-2-a5eacf0d4d3d?source=rss----98111c9905da---4" target="_blank">Top 20 Time Series Forecasting Interview Questions and Answers (Part 1 of 2)</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Towards AI</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary"><div class="medium-feed-item"><p class="medium-feed-image"><a href="https://pub.towardsai.net/top-20-time-series-forecasting-interview-questions-and-answers-part-1-of-2-a5eacf0d4d3d?source=rss----98111c9905da---4"><img src="https://cdn-images-1.medium.com/max/1024/1*-QghCyJAjhOyc2EtipcZ-w.png" width...</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/ai-economy-forum/" target="_blank">Bringing people together at AI for the Economy Forum</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">AI at Google</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary">Woman working with a large tool. On the left are the Google and MIT FutureTech logos, "AI for the Economy Forum", and "Innovation and Adaption in the New Era"</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://pub.towardsai.net/llm-guardrails-and-safety-in-production-ai-systems-1375d44be3ef?source=rss----98111c9905da---4" target="_blank">LLM Guardrails and Safety in Production AI Systems</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Towards AI</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary"><blockquote>Last post covered evaluation, monitoring, and model degradation. This one covers <strong><em>guardrails</em></strong> — how you prevent LLMs from hallucinating, leaking data, following malicious instructions, or generating harmful content in production systems.</blockquote><p>LLMs genera...</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://huggingface.co/blog/waypoint-1-5" target="_blank">Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Hugging Face Blog</span>
+                    <span class="article-date"> • 2026-04-09</span>
+                </div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://huggingface.co/blog/multimodal-sentence-transformers" target="_blank">Multimodal Embedding & Reranker Models with Sentence Transformers</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Hugging Face Blog</span>
+                    <span class="article-date"> • 2026-04-09</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-header">AI Governance & Policy</h2>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://futureoflife.org/statement/attack-against-sam-altmans-home/" target="_blank">FLI CEO’s statement on the attack against Sam Altman’s home</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Future of Life Institute</span>
+                    <span class="article-date"> • 2026-04-10</span>
+                </div>
+
+                <div class="article-summary">Anthony Aguirre, President and CEO of the Future of Life Institute, issued the following statement in response to the attack [&#8230;]</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://partnershiponai.org/these-3-agreements-secured-ai-protections-for-30000-union-workers/" target="_blank">These 3 Agreements Secured AI Protections for 30,000 Union Workers</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Partnership on AI</span>
+                    <span class="article-date"> • 2026-04-09</span>
+                </div>
+
+                <div class="article-summary"><p>The post <a href="https://partnershiponai.org/these-3-agreements-secured-ai-protections-for-30000-union-workers/">These 3 Agreements Secured AI Protections for 30,000 Union Workers</a> appeared first on <a href="https://partnershiponai.org">Partnership on AI</a>.</p></div>
+
+            </div>
+
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-header">Industry News</h2>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.artificialintelligence-news.com/news/sap-brings-agentic-ai-human-capital-management/" target="_blank">SAP brings agentic AI to human capital management</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">AI News</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary"><p>According to SAP, integrating agentic AI into core human capital management (HCM) modules helps target operational bloat and reduce costs. SAP’s SuccessFactors 1H 2026 release aims to anticipate administrative bottlenecks before they stall daily operations by embedding a network of AI agents acro...</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.artificialintelligence-news.com/news/canadas-scotiabank-preps-for-its-ai-future/" target="_blank">Canada’s Scotiabank preps for its AI future</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">AI News</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary"><p>Scotiabank has launched an AI framework, Scotia Intelligence, for data and AI operations that joins various platforms, data oversight, and software tools into a single instance. According to a press release from the bank, the stated purpose of Scotia Intelligence is to give employees, especially ...</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/" target="_blank">OpenAI has bought AI personal finance startup Hiro</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">TechCrunch AI</span>
+                    <span class="article-date"> • 2026-04-14</span>
+                </div>
+
+                <div class="article-summary">The acquisition indicates a capability that OpenAI is building into ChatGPT: financial planning.</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/911423/openai-sam-altman-attack" target="_blank">Daniel Moreno-Gama is facing federal charges for attacking Sam Altman&#8217;s home and OpenAI’s HQ</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">The Verge AI</span>
+                    <span class="article-date"> • 2026-04-13</span>
+                </div>
+
+                <div class="article-summary">Daniel Moreno-Gama is now facing federal charges after allegedly traveling from Texas to California with the intent to kill OpenAI CEO Sam Altman. On April 10th, he was arrested after throwing a Molotov cocktail at OpenAI CEO Sam Altman's home and attempting to break into OpenAI's headquarters. Acco...</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/" target="_blank">Microsoft is working on yet another OpenClaw-like agent</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">TechCrunch AI</span>
+                    <span class="article-date"> • 2026-04-13</span>
+                </div>
+
+                <div class="article-summary">The new features would be geared toward enterprise customers, with better security controls than the famously risky open source OpenClaw agent.</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/911267/ai-influencers-coachella" target="_blank">AI influencers are ‘everywhere’ at Coachella</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">The Verge AI</span>
+                    <span class="article-date"> • 2026-04-13</span>
+                </div>
+
+                <div class="article-summary">Coachella kicked off on Friday, and as usual, it's the place to be for online influencers looking to show off their memorable experiences at the festival. A quick scroll through my social media feeds has already shown me many uncannily attractive figures in glitzy outfits, posing for perfectly stage...</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/" target="_blank">“Negative” views of Broadcom driving thousands of VMware migrations, rival says</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Ars Technica AI</span>
+                    <span class="article-date"> • 2026-04-09</span>
+                </div>
+
+                <div class="article-summary">Western Union exec says there were "challenges" working with Broadcom.</div>
+
+            </div>
+
+            <div class="article">
+                <div class="article-title">
+                    <a href="https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/" target="_blank">Iran-linked hackers disrupt operations at US critical infrastructure sites</a>
+                </div>
+                <div class="article-meta">
+                    <span class="article-source">Ars Technica AI</span>
+                    <span class="article-date"> • 2026-04-08</span>
+                </div>
+
+                <div class="article-summary">As the US and Israel's war has ramped up, so too have hacks on US industrial sites.</div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Generated automatically • Updates daily</p>
+        </footer>
+    </div>
+</body>
+</html>

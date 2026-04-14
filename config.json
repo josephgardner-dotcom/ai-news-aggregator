@@ -1,0 +1,121 @@
+{
+  "feeds": [
+    {
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "category": "Company Announcements"
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.research.google/feeds/posts/default",
+      "category": "Company Announcements"
+    },
+    {
+      "name": "Microsoft AI Blog",
+      "url": "https://blogs.microsoft.com/ai/feed/",
+      "category": "Company Announcements"
+    },
+    {
+      "name": "Salesforce AI Blog",
+      "url": "https://www.salesforce.com/blog/category/artificial-intelligence/feed/",
+      "category": "Company Announcements"
+    },
+    {
+      "name": "NVIDIA AI Blog",
+      "url": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
+      "category": "Company Announcements"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "category": "Research & Development"
+    },
+    {
+      "name": "AI at Google",
+      "url": "https://blog.google/technology/ai/rss/",
+      "category": "Research & Development"
+    },
+    {
+      "name": "MIT CSAIL",
+      "url": "https://www.csail.mit.edu/rss.xml",
+      "category": "Research & Development"
+    },
+    {
+      "name": "Towards AI",
+      "url": "https://pub.towardsai.net/feed",
+      "category": "Research & Development"
+    },
+    {
+      "name": "AI Alignment Forum",
+      "url": "https://www.alignmentforum.org/feed.xml",
+      "category": "AI Agents & Automation"
+    },
+    {
+      "name": "AutoGPT Blog",
+      "url": "https://news.agpt.co/rss/",
+      "category": "AI Agents & Automation"
+    },
+    {
+      "name": "CrewAI Updates",
+      "url": "https://blog.crewai.com/feed/",
+      "category": "AI Agents & Automation"
+    },
+    {
+      "name": "VentureBeat Enterprise AI",
+      "url": "https://venturebeat.com/category/enterprise/feed/",
+      "category": "Enterprise AI"
+    },
+    {
+      "name": "Forbes AI",
+      "url": "https://www.forbes.com/ai/feed/",
+      "category": "Enterprise AI"
+    },
+    {
+      "name": "ZDNet AI",
+      "url": "https://www.zdnet.com/topic/artificial-intelligence/rss.xml",
+      "category": "Enterprise AI"
+    },
+    {
+      "name": "InfoWorld AI",
+      "url": "https://www.infoworld.com/category/artificial-intelligence/index.rss",
+      "category": "Enterprise AI"
+    },
+    {
+      "name": "Future of Life Institute",
+      "url": "https://futureoflife.org/feed/",
+      "category": "AI Governance & Policy"
+    },
+    {
+      "name": "AI Ethics Lab",
+      "url": "https://www.ai-ethics.com/feed/",
+      "category": "AI Governance & Policy"
+    },
+    {
+      "name": "Partnership on AI",
+      "url": "https://www.partnershiponai.org/feed/",
+      "category": "AI Governance & Policy"
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "category": "Industry News"
+    },
+    {
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "category": "Industry News"
+    },
+    {
+      "name": "AI News",
+      "url": "https://www.artificialintelligence-news.com/feed/",
+      "category": "Industry News"
+    },
+    {
+      "name": "Ars Technica AI",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "category": "Industry News"
+    }
+  ],
+  "max_articles_per_feed": 2,
+  "days_to_show": 7
+}
